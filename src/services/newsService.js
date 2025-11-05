@@ -8,6 +8,8 @@ class NewsService {
     this.apiKey = process.env.NEWS_API_KEY;
   }
 
+  // hello world
+
   async getNews() {
     const now = Date.now();
     
