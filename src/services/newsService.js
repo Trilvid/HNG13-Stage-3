@@ -5,7 +5,7 @@ class NewsService {
   constructor() {
     this.cache = { data: null, timestamp: 0 };
     this.cacheDuration = 60 * 60 * 1000; // 1 hour
-    this.apiKey = process.env.NEWS_API_KEY || '4ec929148e9f44c69aed41d1c0842aac';
+    this.apiKey = process.env.NEWS_API_KEY;
   }
 
   async getNews() {
